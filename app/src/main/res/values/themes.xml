@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.StyleSkin" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+
+    <style name="Theme.Default" parent="Theme.StyleSkin">
+        <item name="theme_d_bg">@drawable/bg_day</item>
+        <item name="theme_b100">@color/theme_b100</item>
+        <item name="theme_d_icon_delete">@drawable/icon_delete</item>
+
+    </style>
+
+    <style name="Theme.Night" parent="Theme.StyleSkin">
+        <item name="theme_d_bg">@drawable/bg_night</item>
+        <item name="theme_b100">@color/theme_b100_night</item>
+        <item name="theme_d_icon_delete">@drawable/icon_delete_night</item>
+
+    </style>
+
+
+</resources>

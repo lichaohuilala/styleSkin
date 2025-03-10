@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <attr name="theme_d_bg" format="color|reference" />
+
+    <attr name="theme_b100" format="color|reference" />
+
+
+    <attr name="theme_d_icon_delete" format="reference" />
+
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:background="?attr/theme_d_bg"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/bt_switch_theme"
+            android:layout_width="wrap_content"
+            android:textColor="?attr/theme_b100"
+            android:text="点我切换主题,避免闪烁"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="100dp"
+            android:text="动态通过代码设置颜色，图片"
+            android:textColor="?attr/theme_b100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/iv_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:id="@+id/iv_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+
+
