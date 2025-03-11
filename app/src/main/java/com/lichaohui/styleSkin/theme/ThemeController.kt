@@ -97,7 +97,17 @@ class ThemeController {
         }
 
     }
-
+    /*闪烁切换主题*/
+    fun switchThemeDef() {
+        toggleThemeSp()
+        Log.d(
+            TAG,
+            "switchTheme: activity=$activity    themeFlag=${AppConfig.instance.themeNightFlag}"
+        )
+        activity?.let {
+            it.recreate()
+        }
+    }
     private fun toggleThemeSp() {
         when (AppConfig.instance.themeNightFlag) {
             1 -> {

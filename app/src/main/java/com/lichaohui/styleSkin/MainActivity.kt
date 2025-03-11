@@ -14,6 +14,9 @@ class MainActivity : BaseActivity<ActivityMainBinding>(R.layout.activity_main) {
         mBinding.btSwitchTheme.setOnClickListener {
             mThemeController.switchTheme()
         }
+        mBinding.btSwitchThemeD.setOnClickListener {
+            mThemeController.switchThemeDef()
+        }
 
         mBinding.ivImage.setImageDrawable(getThemeDrawable(R.attr.theme_d_icon_delete))
 
